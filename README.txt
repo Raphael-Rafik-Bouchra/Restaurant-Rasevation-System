@@ -1,0 +1,138 @@
+@Copyright 2020
+I hope you enjoy the program
+----------------------------------------
+1-Assumptions:
+---------------------
++ Input file name MUBT BE "data.xml".
++ Input XML file MUST BE in the same directory of the executable JAR.
++ Ouput file name "orderData.xml".
++ One client can make several orders.
++ Client order does NOT contain the time of the order.
++ Client CAN NOT reserve less than one seat.
++ Client MUST select a smoking value.
++ Client MUST select a dish before pressing the add dish button.
++ Client CAN NOT make a checkout with an empty list off dishes.
++ Client MUST click save button or all the selections will be discarded.
++ A table CAN NOT be reserved by more than one client.
++ Total Earned Money = the summation of PRICES of all reserved dishes (Does NOT include taxes).
+--------------------------------------------------------------------------------------------------------------------------------------
+2-Division Of Labor:
+---------------------------
++ We have worked almost all sections together.
+--------------------------------------------------------------------------------------------------------------------------------------
+3-Sample Run Link:
+--------------------------
+https://youtu.be/YtpwxInVtsE
+--------------------------------------------------------------------------------------------------------------------------------------
+4-XML sample file:
+------------------------
+-<restaurant>
+	-<users>
+		-<user>
+			<name>Adam Smith</name>
+			<role>Manager</role>
+			<username>adam</username>
+			<password>adam_manager</password>
+		</user>
+		-<user>
+			<name>John Doe</name>
+			<role>Client</role>
+			<username>john</username>
+			<password>john_doe</password>
+		</user>
+		-<user>
+			<name>Brian Johnes</name>
+			<role>Client</role>
+			<username>brian</username>
+			<password>mdir@admj%ar5qX2</password>
+		</user>
+		-<user>
+			<name>George Robben</name>
+			<role>Waiter</role>
+			<username>george</username>
+			<password>k6987_#LpQ</password>
+		</user>
+		-<user>
+			<name>Tomas Hobbens</name>
+			<role>Cooker</role>
+			<username>hobbens_tom</username>
+			<password>cooker_pass</password>
+		</user>
+	</users>
+	-<tables>
+		-<table>
+			<number>1</number>
+			<number_of_seats>5</number_of_seats>
+			<smoking>false</smoking>
+		</table>
+		-<table>
+			<number>2</number>
+			<number_of_seats>12</number_of_seats>
+			<smoking>false</smoking>
+		</table>
+		-<table>
+			<number>3</number>
+			<number_of_seats>12</number_of_seats>
+			<smoking>true</smoking>
+		</table>
+		-<table>
+			<number>4</number>
+			<number_of_seats>4</number_of_seats>
+			<smoking>false</smoking>
+		</table>
+		-<table>
+			<number>5</number>
+			<number_of_seats>4</number_of_seats>
+			<smoking>true</smoking>
+		</table>
+		-<table>
+			<number>6</number>
+			<number_of_seats>7</number_of_seats>
+			<smoking>true</smoking>
+		</table>
+		-<table>
+			<number>7</number>
+			<number_of_seats>6</number_of_seats>
+			<smoking>true</smoking>
+		</table>
+	</tables>
+	-<dishes>
+		-<dish>
+			<name>Grilled Chicken</name>
+			<price>75</price>
+			<type>main_course</type>
+		</dish>
+		-<dish>
+			<name>Greek Salade</name>
+			<price>35</price>
+			<type>appetizer</type>
+		</dish>
+		-<dish>
+			<name>Fried Potatos</name>
+			<price>30</price>
+			<type>appetizer</type>
+		</dish>
+		-<dish>
+			<name>Apple Pie</name>
+			<price>50</price>
+			<type>desert</type>
+		</dish>
+		-<dish>
+			<name>Molten Cake</name>
+			<price>60</price>
+			<type>desert</type>
+		</dish>
+		-<dish>
+			<name>Mushroom Soup</name>
+			<price>60</price>
+			<type>main_course</type
+		</dish>
+		-<dish>
+			<name>Beef Steak</name>
+			<price>80</price>
+			<type>main_course</type>
+		</dish>
+	</dishes>
+</restaurant>
+--------------------------------------------------------------------------------------------------------------------------------------
+
